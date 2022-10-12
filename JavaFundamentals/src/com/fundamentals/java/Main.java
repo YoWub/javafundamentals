@@ -10,12 +10,32 @@ public class Main {
 //        System.out.println("Hello Java\n");
 
 //        houseExample();
-        basicLab();
+//        basicLab();
+        lesson3Example();
+
+    } // end method
+
+    public static void lesson3Example() {
+        Lesson3 myLesson3 = new Lesson3();
+//        myLesson3.exampleString();
+//        myLesson3.exampleCharAt();
+//        myLesson3.exampleConcat();
+//        myLesson3.exampleEquals();
+//        myLesson3.exampleLower();
+//        myLesson3.exampleUpper();
+//        myLesson3.exampleLength();
+//        System.out.println(myLesson3.exampleReplace());
+//        myLesson3.exampleBuilder("burger", 2);
+//        myLesson3.exampleChar();
+        myLesson3.exampleEscape();
+
     } // end method
 
     public static void basicLab() {
+
         System.out.println("Hello Java\n");
-    }
+    } // end method
+
     /**
      * houseExample method
      */

@@ -11,4 +11,4 @@ public class House {
     }
 
     // TODO: Add encapsulation to this class
-};
+} // end class
