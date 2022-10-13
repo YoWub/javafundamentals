@@ -11,7 +11,8 @@ public class Main {
 
 //        houseExample();
 //        basicLab();
-        lesson3Example();
+//        lesson3Example();
+        lesson4Example();
 
     } // end method
 
@@ -28,6 +29,16 @@ public class Main {
 //        myLesson3.exampleBuilder("burger", 2);
 //        myLesson3.exampleChar();
         myLesson3.exampleEscape();
+
+    } // end method
+
+    public static void lesson4Example() {
+        Lesson4 myLesson4 = new Lesson4();
+//        myLesson4.numericExample();
+//        myLesson4.exponentExample();
+//        myLesson4.showLocalExample();
+//        myLesson4.exampleImplicit();
+        myLesson4.sampleMethods();
 
     } // end method
 
