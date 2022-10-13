@@ -3,6 +3,8 @@
  ********************************/
 package com.fundamentals.java;
 
+import com.fundamentals.labs.BasicStatements;
+
 // main class
 public class Main {
 
@@ -10,9 +12,9 @@ public class Main {
 //        System.out.println("Hello Java\n");
 
 //        houseExample();
-//        basicLab();
+        basicLab();
 //        lesson3Example();
-        lesson4Example();
+//        lesson4Example();
 
     } // end method
 
@@ -45,6 +47,8 @@ public class Main {
     public static void basicLab() {
 
         System.out.println("Hello Java\n");
+        BasicStatements myBasicStatements = new BasicStatements();
+        myBasicStatements.printStatments();
     } // end method
 
     /**
