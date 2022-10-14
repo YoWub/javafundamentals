@@ -4,6 +4,7 @@
 package com.fundamentals.java;
 
 import com.fundamentals.labs.BasicStatements;
+import com.fundamentals.practice.ModifierPractice;
 
 // main class
 public class Main {
@@ -12,9 +13,10 @@ public class Main {
 //        System.out.println("Hello Java\n");
 
 //        houseExample();
-        basicLab();
+//        basicLab();
 //        lesson3Example();
 //        lesson4Example();
+        modifiersExample();
 
     } // end method
 
@@ -70,4 +72,14 @@ public class Main {
         System.out.println(otherHouse.doorColor);
         System.out.println(thirdHouse.doorColor);
     }
+
+    /*Modifiers Example*/
+    public static void modifiersExample() {
+        ModifierPractice practice = new ModifierPractice();
+        // practice.examplePrivate(); can not access b/c of private modifier
+//        practice.exampleDefault(); can not access b/c of default modifier
+//        practice.exampleProtected("Matt"); can not access b/c of protected modifier
+        practice.examplePublic();
+        System.out.println(practice.isHere);
+    } // end method
 } // end class
