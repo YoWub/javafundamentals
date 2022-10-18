@@ -16,8 +16,15 @@ public class Main {
 //        basicLab();
 //        lesson3Example();
 //        lesson4Example();
-        modifiersExample();
+//        modifiersExample();
+//        stringLab();
+        lesson5Example();
+    } // end method
 
+    public static void lesson5Example(){
+        Lesson5 lesson5 = new Lesson5();
+//        lesson5 lesson 5 = new Lesson5();
+        lesson5.timePeriodExample();
     } // end method
 
     public static void lesson3Example() {
@@ -44,6 +51,11 @@ public class Main {
 //        myLesson4.exampleImplicit();
         myLesson4.sampleMethods();
 
+    } // end method
+
+    public static void stringLab() {
+//        StringsLab myStrings = new StringsLab();
+//        myStrings.printStatements();
     } // end method
 
     public static void basicLab() {
