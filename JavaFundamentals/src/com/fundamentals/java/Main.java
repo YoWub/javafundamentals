@@ -4,6 +4,7 @@
 package com.fundamentals.java;
 
 import com.fundamentals.labs.BasicStatements;
+import com.fundamentals.labs.StringsLab;
 import com.fundamentals.practice.ModifierPractice;
 
 // main class
@@ -17,8 +18,8 @@ public class Main {
 //        lesson3Example();
 //        lesson4Example();
 //        modifiersExample();
-//        stringLab();
-        lesson5Example();
+        stringsLab();
+//        lesson5Example();
     } // end method
 
     public static void lesson5Example(){
@@ -53,9 +54,10 @@ public class Main {
 
     } // end method
 
-    public static void stringLab() {
-//        StringsLab myStrings = new StringsLab();
-//        myStrings.printStatements();
+    public static void stringsLab() {
+        StringsLab myString = new StringsLab();
+        myString.takeOne("test");
+        myString.takeTwo();
     } // end method
 
     public static void basicLab() {
