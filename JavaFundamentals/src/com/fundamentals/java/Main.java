@@ -4,6 +4,7 @@
 package com.fundamentals.java;
 
 import com.fundamentals.labs.BasicStatements;
+import com.fundamentals.labs.NumbersLab;
 import com.fundamentals.labs.StringsLab;
 import com.fundamentals.practice.ModifierPractice;
 
@@ -18,8 +19,27 @@ public class Main {
 //        lesson3Example();
 //        lesson4Example();
 //        modifiersExample();
-        stringsLab();
+//        stringsLab();
 //        lesson5Example();
+//        lesson6Example();
+        numbersLab();
+
+    } // end method
+
+    public static void lesson6Example(){
+        Lesson6 lesson6 = new Lesson6();
+//        lesson6.basicMath();
+//        lesson6.exampleModulus();
+//        lesson6.mathOrder();
+//        lesson6.addTwoNumbers();
+//        lesson6.exampleAssignment();
+//        lesson6.relationalEquals(2, 3);
+//        lesson6.relationalGreater(5, 5);
+//        lesson6.exampleLogicalAnd(7, 7, 10);
+//        lesson6.exampleLogicalOr(2, 3, 4);
+//        lesson6.exampleLogicalNot(10, 5);
+//        lesson6.exampleIncrement();
+        lesson6.exampleDecrement();
     } // end method
 
     public static void lesson5Example(){
@@ -58,6 +78,13 @@ public class Main {
         StringsLab myString = new StringsLab();
         myString.takeOne("test");
         myString.takeTwo();
+    } // end method
+
+    public static void numbersLab() {
+        NumbersLab myNumbersLab = new NumbersLab();
+        myNumbersLab.takeOne();
+        myNumbersLab.takeTwo();
+        myNumbersLab.takeThree();
     } // end method
 
     public static void basicLab() {

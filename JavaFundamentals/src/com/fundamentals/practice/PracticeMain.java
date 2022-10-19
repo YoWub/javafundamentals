@@ -9,11 +9,22 @@ import java.lang.reflect.Array;
 public class PracticeMain {
 
     public static void main(String[] args){
-        modifiers();
-        lessonsReference();
-        exampleVarArgs();
-        singleVarArg();
+//        modifiers();
+//        lessonsReference();
+//        exampleVarArgs();
+//        singleVarArg();
+        lesson6practice();
     } // end method
+
+    public static void lesson6practice(){
+        OperatorsPractice operatorsPractice = new OperatorsPractice();
+        operatorsPractice.mathOrder();
+//        operatorsPractice.addTwoNumbers();
+//        operatorsPractice.exampleAssignment();
+//        operatorsPractice.exampleIncrement();
+//        operatorsPractice.exampleDecrement();
+//        operatorsPractice.exampleLogicalAnd();
+    }
 
     public static void modifiers(){
         ModifierPractice practice =  new ModifierPractice();
