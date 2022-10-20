@@ -22,8 +22,29 @@ public class Main {
 //        stringsLab();
 //        lesson5Example();
 //        lesson6Example();
-        numbersLab();
+        lesson7Example();
+//        numbersLab();
+    } // end method
 
+    public static void lesson7Example() {
+        Lesson7 lesson7 = new Lesson7();
+//        lesson7.basicIfStatement(2, 3);
+//        lesson7.basicIfElseStatement(5, 10);
+//        lesson7.mathAndIfIf(5, 20, 12);
+//        lesson7.mathAndIfIf2(5, 20, 122);
+//        String result = lesson7.basicIfElseChain(15);
+//        System.out.println(result);
+//        lesson7.basicIfAndExample(20);
+//        lesson7.basicIfOrExample(50);
+//        lesson7.basicSwitch(4);
+//        lesson7.otherSwitch(3);
+//        lesson7.anotherSwitch(3);
+//        lesson7.stringSwitch("Monday");
+//        lesson7.charSwitch('t');
+//        String result = lesson7.patternSwitch(3);
+//        System.out.println(result);
+//        System.out.println(lesson7.patternSwitch(3));
+        lesson7.ternaryOperatorExample(1000);
     } // end method
 
     public static void lesson6Example(){
