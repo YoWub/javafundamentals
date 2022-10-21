@@ -1,5 +1,6 @@
 package com.fundamentals.practice;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class OperatorsPractice {
@@ -118,6 +119,18 @@ public class OperatorsPractice {
 
         jerry = --tom;
         System.out.println(jerry);
+    } // end method
+
+    /*the Math class*/
+    public void mathStuff(){
+        System.out.println(Math.pow(12, 3));
+    } // end method
+
+    /*the Math class*/
+    public void bigDecimal(int voltage, int resistance, int current) {
+        System.out.println() ;
+            // figure out which formula to use to solve for either one
+            // i = v/r
     } // end method
 
 } // end class

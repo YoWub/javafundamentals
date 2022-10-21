@@ -14,11 +14,25 @@ public class PracticeMain {
 //        exampleVarArgs();
 //        singleVarArg();
         lesson6practice();
+//        lesson8practice();
+//        beer();
     } // end method
+
+    public static void lesson8practice(){
+        LoopingPractice loopingPractice = new LoopingPractice();
+        loopingPractice.loopFiveThree();
+//        operatorsPractice.addTwoNumbers();
+//        operatorsPractice.exampleAssignment();
+//        operatorsPractice.exampleIncrement();
+//        operatorsPractice.exampleDecrement();
+//        operatorsPractice.exampleLogicalAnd();
+    }
 
     public static void lesson6practice(){
         OperatorsPractice operatorsPractice = new OperatorsPractice();
-        operatorsPractice.mathOrder();
+//        operatorsPractice.mathOrder();
+        operatorsPractice.mathStuff();
+        operatorsPractice.bigDecimal();
 //        operatorsPractice.addTwoNumbers();
 //        operatorsPractice.exampleAssignment();
 //        operatorsPractice.exampleIncrement();
@@ -39,6 +53,11 @@ public class PracticeMain {
         Lesson4 lesson4 = new Lesson4();
         lesson4.sampleMethods();
     } // end method
+
+    public static void beer() {
+        BottlesOfBeer beer = new BottlesOfBeer();
+        beer.beerSong();
+    }
 
     public static void exampleVarArgs(){
         singleVarArg("Happy", "Thursday", "Weekend");

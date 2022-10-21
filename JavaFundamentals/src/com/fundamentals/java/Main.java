@@ -22,8 +22,20 @@ public class Main {
 //        stringsLab();
 //        lesson5Example();
 //        lesson6Example();
-        lesson7Example();
+//        lesson7Example();
+        lesson8Example();
 //        numbersLab();
+    } // end method
+
+    public static void lesson8Example() {
+        Lesson8 lesson8 = new Lesson8();
+//        lesson8.basicWhileLoop();
+//        lesson8.basicWhileCountdownLoop();
+//        lesson8.basicDoWhileLoop(10);
+//        lesson8.basicForLoop(20);
+//        lesson8.multiLoop(2, 4);
+//        lesson8.forLoopStringExample();
+        lesson8.basicBranchExample();
     } // end method
 
     public static void lesson7Example() {
