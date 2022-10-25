@@ -31,8 +31,8 @@ public class PracticeMain {
     public static void lesson6practice(){
         OperatorsPractice operatorsPractice = new OperatorsPractice();
 //        operatorsPractice.mathOrder();
-        operatorsPractice.mathStuff();
-        operatorsPractice.bigDecimal();
+//        operatorsPractice.mathStuff();
+//        operatorsPractice.bigDecimal();
 //        operatorsPractice.addTwoNumbers();
 //        operatorsPractice.exampleAssignment();
 //        operatorsPractice.exampleIncrement();
