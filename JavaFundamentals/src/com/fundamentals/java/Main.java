@@ -5,8 +5,11 @@ package com.fundamentals.java;
 
 import com.fundamentals.labs.BasicStatements;
 import com.fundamentals.labs.NumbersLab;
+import com.fundamentals.labs.OperatorsLab;
 import com.fundamentals.labs.StringsLab;
 import com.fundamentals.practice.ModifierPractice;
+
+import java.util.ArrayList;
 
 // main class
 public class Main {
@@ -24,9 +27,18 @@ public class Main {
 //        lesson6Example();
 //        lesson7Example();
 //        lesson8Example();
-        lesson9Example();
+//        lesson9Example();
+//        lesson10Example();
 //        numbersLab();
+        operatorsLab();
     } // end method
+
+    public static void operatorsLab() {
+        OperatorsLab operatorslab = new OperatorsLab();
+        operatorslab.task_one();
+        operatorslab.task_two(2, 3);
+        operatorslab.task_three();
+    }
 
     public static void lesson8Example() {
         Lesson8 lesson8 = new Lesson8();
@@ -50,6 +62,23 @@ public class Main {
 //        lesson9.jaggedArrays();
         lesson9.anotherJaggedArrays();
     } // end method
+
+    public static void lesson10Example() {
+        Lesson10 lesson10 = new Lesson10();
+//        lesson10.stringArrayList();
+
+        ArrayList<House> houseList = lesson10.myHouseList(5);
+//        houseList.get(1).doorColor = "Red";
+        for(House house: houseList) {
+//            house.doorFunction();
+        }
+
+//        lesson10.exampleHashSet();
+//        lesson10.exampleHashMap();
+        lesson10.linkedList();
+        lesson10.queueList();
+    } // end method
+
 
     public static void lesson7Example() {
         Lesson7 lesson7 = new Lesson7();

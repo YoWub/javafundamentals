@@ -1,6 +1,7 @@
 package com.fundamentals.practice;
 
 import com.fundamentals.java.Lesson4;
+import com.fundamentals.labs.OperatorsLab;
 
 import  java.util.Arrays;
 
@@ -13,7 +14,7 @@ public class PracticeMain {
 //        lessonsReference();
 //        exampleVarArgs();
 //        singleVarArg();
-        lesson6practice();
+//        lesson6practice();
 //        lesson8practice();
 //        beer();
     } // end method
