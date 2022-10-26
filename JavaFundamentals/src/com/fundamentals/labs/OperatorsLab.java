@@ -3,7 +3,7 @@ package com.fundamentals.labs;
 import java.util.Scanner;
 
 public class OperatorsLab {
-    public void task_one() {
+    public void taskOne() {
         int variable_1 = 10 + 32 * 12 / 3;
         int variable_2 = (10 + 32) * 12 / 3;
 
@@ -13,7 +13,7 @@ public class OperatorsLab {
         System.out.println();
     }
 
-    public void task_two(int param_1, int param_2) {
+    public void taskTwo(int param_1, int param_2) {
 
         System.out.println("Solution to Task 2:");
         System.out.println(param_1 += param_2);
@@ -22,7 +22,7 @@ public class OperatorsLab {
         System.out.println();
     }
 
-    public void task_three() {
+    public void taskThree() {
 
         System.out.println("Solution to Task 3:");
         System.out.println("Enter an integer below to calculate its modulus(remainder) value when divided by 5:\n");

@@ -35,9 +35,9 @@ public class Main {
 
     public static void operatorsLab() {
         OperatorsLab operatorslab = new OperatorsLab();
-        operatorslab.task_one();
-        operatorslab.task_two(2, 3);
-        operatorslab.task_three();
+        operatorslab.taskOne();
+        operatorslab.taskTwo(2, 3);
+        operatorslab.taskThree();
     }
 
     public static void lesson8Example() {
