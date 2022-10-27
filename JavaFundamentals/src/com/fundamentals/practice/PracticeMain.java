@@ -19,6 +19,9 @@ public class PracticeMain {
 //        beer();
     } // end method
 
+    public static void serializationExample() {
+    }
+
     public static void lesson8practice(){
         LoopingPractice loopingPractice = new LoopingPractice();
         loopingPractice.loopFiveThree();

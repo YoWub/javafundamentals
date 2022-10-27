@@ -3,10 +3,7 @@
  ********************************/
 package com.fundamentals.java;
 
-import com.fundamentals.labs.BasicStatements;
-import com.fundamentals.labs.NumbersLab;
-import com.fundamentals.labs.OperatorsLab;
-import com.fundamentals.labs.StringsLab;
+import com.fundamentals.labs.*;
 import com.fundamentals.practice.ModifierPractice;
 
 import java.util.ArrayList;
@@ -30,9 +27,35 @@ public class Main {
 //        lesson9Example();
 //        lesson10Example();
 //        numbersLab();
-        operatorsLab();
+//        operatorsLab();
+//        companyExample();
+//        System.out.println("Hello Java!");
+//        lesson11Example();
+        conditionalLab();
     } // end method
 
+    public static void conditionalLab() {
+        ConditionalStatementsLab conditionalStatementsLab = new ConditionalStatementsLab();
+        conditionalStatementsLab.taskOne("Hey!", "Hello!");
+        conditionalStatementsLab.taskTwo('E');
+    }
+
+    public static void lesson11Example() {
+        System.out.println(Lesson11.fahrenheitToCelsius(56));
+        System.out.println(Lesson11.celsiusToFahrenheit(13));
+        System.out.println(Lesson11.celsiusToKelvin(30));
+        System.out.println(Lesson11.kelvinToCelsius(286.64));
+        System.out.println(Lesson11.fahrenheitToKelvin(56));
+        System.out.println(Lesson11.kelvinToFahrenheit(355.648));
+    }
+    public static void companyExample() {
+        CompanyInfo info = new CompanyInfo();
+        info.id = 101001;
+        info.name = "peter Parker";
+        info.display();
+        CompanyInfo.company = "Daily Bugle";
+        info.display();
+    }
     public static void operatorsLab() {
         OperatorsLab operatorslab = new OperatorsLab();
         operatorslab.taskOne();
@@ -114,7 +137,7 @@ public class Main {
 //        lesson6.exampleLogicalOr(2, 3, 4);
 //        lesson6.exampleLogicalNot(10, 5);
 //        lesson6.exampleIncrement();
-        lesson6.exampleDecrement();
+//        lesson6.exampleDecrement();
     } // end method
 
     public static void lesson5Example(){
