@@ -1,5 +1,6 @@
 package com.fundamentals.practice;
 
+import com.fundamentals.java.House;
 import com.fundamentals.java.Lesson4;
 import com.fundamentals.labs.OperatorsLab;
 
@@ -17,10 +18,50 @@ public class PracticeMain {
 //        lesson6practice();
 //        lesson8practice();
 //        beer();
+        encapsulateBoat();
+        dogRecord();
     } // end method
 
-    public static void serializationExample() {
+    public static void dogRecord() {
+        Dog myDog = new Dog(3, "lab", 8);
+
+        System.out.println(myDog.breed());
+        myDog.move();
     }
+
+    public static void encapsulateBoat(){
+
+        Boat boat1 = new Boat(450, 300, "Brown", "Rubber");
+
+        Boat boat2 = new Boat(450, 300, "Silver", "Steel");
+
+        Boat boat3 = new Boat(450, 300, "White", "Wood");
+
+        System.out.println(boat1.getMastLength());
+        System.out.println(boat2.getRudderMaterial());
+        System.out.println(boat3.getBodyColor());
+
+
+        Boat boat4 = new Boat();
+        System.out.println(boat4.getMastLength());
+        System.out.println(boat4.getRudderMaterial());
+        System.out.println(boat4.getBodyColor());
+
+        Boat boat5 = new Boat(450, 300);
+        System.out.println(boat5.getMastLength());
+        System.out.println(boat5.getRudderMaterial());
+        System.out.println(boat5.getBodyColor());
+
+        Boat boat6 = new Boat(500, 400, "Tan", "Plastic");
+        System.out.println(boat6.getMastLength());
+        System.out.println(boat6.getRudderMaterial());
+        System.out.println(boat6.getBodyColor());
+
+        boat1.boomFunction();
+    }
+
+//    public static void serializationExample() {
+//    }
 
     public static void lesson8practice(){
         LoopingPractice loopingPractice = new LoopingPractice();
@@ -76,4 +117,21 @@ public class PracticeMain {
         }
 //        System.out.println(value[1]); can't use b/c if one argument gets passed, we get am out of bounds error
     } // end method
+
+//    public static void boatExample() {
+//        Boat myBoat = new Boat();
+//        System.out.println(myBoat.getMastLength());
+//        myBoat.setRudderMaterial("Rubber");
+//        myBoat.setBodyColor("Beige");
+//
+//
+//        Boat otherBoat = new Boat();
+//        System.out.println(otherBoat.getRudderMaterial());
+//        otherBoat.setSternWidth(200);
+//
+//        Boat thridBoat = otherBoat;
+//        System.out.println(thridBoat.getMastLength());
+//        thridBoat.setMastLength(400);
+//
+//    }
 } // end class

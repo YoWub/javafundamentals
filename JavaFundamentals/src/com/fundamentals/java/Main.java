@@ -31,8 +31,32 @@ public class Main {
 //        companyExample();
 //        System.out.println("Hello Java!");
 //        lesson11Example();
-        conditionalLab();
+//        conditionalLab();
+//        encapsulateHouse();
+        loopingLab();
     } // end method
+
+    public static void loopingLab () {
+        LoopingLab loopinglab = new LoopingLab();
+        loopinglab.whileLoop();
+        loopinglab.forLoop();
+    }
+
+    public static void encapsulateHouse(){
+        House house1 = new House();
+        System.out.println(house1.getDoorColor());
+        System.out.println(house1.getWindowSize());
+        System.out.println(house1.getFoundationType());
+        System.out.println(house1.getRoofStyle());
+
+        House house2 = new House("Concrete", "Shingle");
+        System.out.println(house2.getDoorColor());
+        System.out.println(house2.getWindowSize());
+
+        House house3 = new House("Dirt", "Bamboo", "Tan", 30);
+        System.out.println(house3.getFoundationType());
+        System.out.println(house3.getRoofStyle());
+    }
 
     public static void conditionalLab() {
         ConditionalStatementsLab conditionalStatementsLab = new ConditionalStatementsLab();
@@ -197,19 +221,22 @@ public class Main {
      */
     public static void houseExample() {
         House myHouse = new House();
-        myHouse.doorColor = "Red";
+        System.out.println(myHouse.getDoorColor());
+//        myHouse.doorColor = "Red";
+        myHouse.setDoorColor("Red");
         myHouse.doorFunction();
 
+
         House otherHouse = new House();
-        otherHouse.doorColor = "Yellow";
-        otherHouse.doorFunction();
+        System.out.println(otherHouse.getDoorColor());
+//        otherHouse.doorColor = "Yellow";
+        otherHouse.setDoorColor("Yellow");
 
         House thirdHouse = otherHouse;
-        thirdHouse.doorColor = "Blue";
+        System.out.println(thirdHouse.getDoorColor());
+//        thirdHouse.doorColor = "Blue";
+        thirdHouse.setDoorColor("Blue");
 
-        System.out.println(myHouse.doorColor);
-        System.out.println(otherHouse.doorColor);
-        System.out.println(thirdHouse.doorColor);
     }
 
     /*Modifiers Example*/
