@@ -41,7 +41,7 @@ public class Main {
     public static void iceCreamFlavors() {
         ArraysLab arraysLab = new ArraysLab();
         arraysLab.iceCreamFlavorsArray();
-        arraysLab.chiefsScoreArray();
+        arraysLab.homeAndAwayTeamScores();
     }
     public static void condoInheritance() {
         Condo myCondo = new Condo();

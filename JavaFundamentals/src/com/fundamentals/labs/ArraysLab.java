@@ -19,7 +19,7 @@ public class ArraysLab {
         };
 
     // Method that displays home and away team scores for Chiefs' 2019 regular season
-    public void chiefsScoreArray() {
+    public void homeAndAwayTeamScores() {
         int[][] scoresArray = {
                 {40, 26}, {28, 10}, {33, 28}, {34, 30}, {13, 19}, {24, 31},
                 {30, 6}, {24, 31}, {26, 23}, {32, 35}, {24, 17}, {40, 9},
