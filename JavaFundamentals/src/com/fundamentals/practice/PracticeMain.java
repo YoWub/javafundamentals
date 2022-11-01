@@ -1,5 +1,6 @@
 package com.fundamentals.practice;
 
+import com.fundamentals.java.Condo;
 import com.fundamentals.java.House;
 import com.fundamentals.java.Lesson4;
 import com.fundamentals.labs.OperatorsLab;
@@ -18,10 +19,62 @@ public class PracticeMain {
 //        lesson6practice();
 //        lesson8practice();
 //        beer();
-        encapsulateBoat();
-        dogRecord();
+//        encapsulateBoat();
+//        dogRecord();
+//        sailBoat();
+//        canoe();
+//        polyShapes();
+        carStuff();
     } // end method
 
+    public static void carStuff() {
+        SportsCar theCar = new SportsCar();
+        theCar.carShape();
+        theCar.setExteriorColor("White");
+        theCar.setHorsePower(300);
+        theCar.setWheelSize(17);
+
+        MuscleCar myCar = new MuscleCar();
+        myCar.carShape(); // parent
+        myCar.motion(); // grand parent
+        myCar.setExteriorColor("Black");
+        myCar.setHorsePower(500);
+        myCar.setWheelSize(20);
+
+        Car myOther = new MuscleCar();
+//        myOther.carShape(); can not access method from SportsCar
+    }
+
+    public static void polyShapes() {
+        Pentagon pent1 = new Pentagon();
+        double angle = pent1.InteriorAngleCalc();
+        System.out.println(angle);
+
+        Hexagon hex1 = new Hexagon();
+        double angle2 = hex1.InteriorAngleCalc();
+        System.out.println(angle2);
+
+        Polygon poly1 = new Pentagon();
+        double angle3 = poly1.InteriorAngleCalc();
+        System.out.println(angle3);
+    }
+    public static void canoe() {
+        SailingBoat mySailBoat = new SailingBoat();
+        mySailBoat.setNumberOfSeats("5");
+        mySailBoat. boomFunction(); // from house
+        mySailBoat.comfort(); // from condo
+        System.out.println(mySailBoat.getNumberOfSeats());
+        System.out.println(mySailBoat.getRudderMaterial());
+    }
+
+    public static void sailBoat() {
+        SailingBoat mySailBoat = new SailingBoat();
+        mySailBoat.setNumberOfSeats("5");
+        mySailBoat. boomFunction(); // from house
+        mySailBoat.comfort(); // from condo
+        System.out.println(mySailBoat.getNumberOfSeats());
+        System.out.println(mySailBoat.getRudderMaterial());
+    }
     public static void dogRecord() {
         Dog myDog = new Dog(3, "lab", 8);
 

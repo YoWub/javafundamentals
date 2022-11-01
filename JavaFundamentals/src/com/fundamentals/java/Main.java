@@ -33,8 +33,24 @@ public class Main {
 //        lesson11Example();
 //        conditionalLab();
 //        encapsulateHouse();
-        loopingLab();
+//        loopingLab();
+//        condoInheritance();
+        iceCreamFlavors();
     } // end method
+
+    public static void iceCreamFlavors() {
+        ArraysLab arraysLab = new ArraysLab();
+        arraysLab.iceCreamFlavorsArray();
+        arraysLab.chiefsScoreArray();
+    }
+    public static void condoInheritance() {
+        Condo myCondo = new Condo();
+        myCondo.setBalconyType("Small Balcony");
+        myCondo.doorFunction(); // from house
+        myCondo.maintenance(); // from condo
+        System.out.println(myCondo.getBalconyType());
+        System.out.println(myCondo.getDoorColor());
+    }
 
     public static void loopingLab () {
         LoopingLab loopinglab = new LoopingLab();
