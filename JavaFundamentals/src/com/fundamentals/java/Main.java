@@ -34,9 +34,17 @@ public class Main {
 //        conditionalLab();
 //        encapsulateHouse();
 //        loopingLab();
-        condoInheritance();
+//        condoInheritance();
 //        iceCreamFlavors();
+        collectionsLabAssignment();
     } // end method
+
+    public static void collectionsLabAssignment() {
+        CollectionsLab myCollectionsLab = new CollectionsLab();
+        myCollectionsLab.PizzasArrayList();
+        System.out.println(CollectionsLab.intsDivisibleByFiveHashSet(50));
+        myCollectionsLab.favoriteBooksHashMap();
+    }
 
     public static void iceCreamFlavors() {
         ArraysLab arraysLab = new ArraysLab();
