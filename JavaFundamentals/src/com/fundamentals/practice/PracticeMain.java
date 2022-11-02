@@ -22,27 +22,65 @@ public class PracticeMain {
 //        encapsulateBoat();
 //        dogRecord();
 //        sailBoat();
+//        encapsulateGuitar();
 //        canoe();
 //        polyShapes();
         carStuff();
     } // end method
 
+    public static void encapsulateGuitar(){
+        Guitar guitar1 = new Guitar();
+        guitar1.setBoxColor("blue");
+        System.out.println(guitar1.getStringCount());
+        System.out.println(guitar1.getNeckLength());
+        System.out.println(guitar1.getHeadStockShape());
+
+        Guitar guitar2 = new Guitar(10, 5);
+//        System.out.println(guitar2.getNeckLength());
+        System.out.println(guitar2.getStringCount());
+
+        Guitar guitar3 = new Guitar(10, 20, "Brown", "Curved");
+        System.out.println(guitar3.getHeadStockShape());
+        System.out.println(guitar3.getNeckLength());
+        guitar3.soundQuality();
+        guitar3.soundQuality("This guitar sounds groovy and its neck length is");
+    }
+
+    public static void acousticGuitar() {
+        AcousticGuitar myAcousticGuitar = new AcousticGuitar();
+        myAcousticGuitar.setBoxMaterial("Wood");
+        myAcousticGuitar.soundQuality(); // from house now overridden
+        myAcousticGuitar.echoSound(); // from condo
+        System.out.println(myAcousticGuitar.getBridgeCount());
+        System.out.println(myAcousticGuitar.getNeckMaterial());
+    }
+
     public static void carStuff() {
         SportsCar theCar = new SportsCar();
-        theCar.carShape();
-        theCar.setExteriorColor("White");
-        theCar.setHorsePower(300);
-        theCar.setWheelSize(17);
+        System.out.println(theCar.getHeadLightType());
+        System.out.println(theCar.getExteriorColor());
 
-        MuscleCar myCar = new MuscleCar();
-        myCar.carShape(); // parent
-        myCar.motion(); // grand parent
-        myCar.setExteriorColor("Black");
-        myCar.setHorsePower(500);
-        myCar.setWheelSize(20);
+        SportsCar otherSport = new SportsCar("LED Light");
+        System.out.println(otherSport.getHeadLightType());
+        System.out.println(otherSport.getHorsePower());
+        System.out.println(otherSport.getExteriorColor());
+//        theCar.carShape();
+//        theCar.setExteriorColor("White");
+//        theCar.setHorsePower(300);
+//        theCar.setWheelSize(17);
 
-        Car myOther = new MuscleCar();
+        MuscleCar myCar = new MuscleCar(3, 19, 445, "Green", "Round");
+        System.out.println(myCar.getExteriorColor());
+        System.out.println(myCar.getHorsePower());
+//        myCar.carShape(); // parent
+        myCar.motion(70); // grand parent
+//        myCar.setExteriorColor("Black");
+//        myCar.setHorsePower(500);
+//        myCar.setWheelSize(20);
+
+        Car myOther = new Car();
 //        myOther.carShape(); can not access method from SportsCar
+        myOther.motion(55);
     }
 
     public static void polyShapes() {
@@ -60,7 +98,7 @@ public class PracticeMain {
     }
     public static void canoe() {
         SailingBoat mySailBoat = new SailingBoat();
-        mySailBoat.setNumberOfSeats("5");
+//        mySailBoat.setNumberOfSeats(5);
         mySailBoat. boomFunction(); // from house
         mySailBoat.comfort(); // from condo
         System.out.println(mySailBoat.getNumberOfSeats());
@@ -69,7 +107,7 @@ public class PracticeMain {
 
     public static void sailBoat() {
         SailingBoat mySailBoat = new SailingBoat();
-        mySailBoat.setNumberOfSeats("5");
+//        mySailBoat.setNumberOfSeats(5);
         mySailBoat. boomFunction(); // from house
         mySailBoat.comfort(); // from condo
         System.out.println(mySailBoat.getNumberOfSeats());
@@ -111,6 +149,7 @@ public class PracticeMain {
         System.out.println(boat6.getBodyColor());
 
         boat1.boomFunction();
+        boat1.boomFunction("This boom swings from starboard to port and its stern width is");
     }
 
 //    public static void serializationExample() {

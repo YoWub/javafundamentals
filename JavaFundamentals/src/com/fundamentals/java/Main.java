@@ -34,8 +34,8 @@ public class Main {
 //        conditionalLab();
 //        encapsulateHouse();
 //        loopingLab();
-//        condoInheritance();
-        iceCreamFlavors();
+        condoInheritance();
+//        iceCreamFlavors();
     } // end method
 
     public static void iceCreamFlavors() {
@@ -45,8 +45,8 @@ public class Main {
     }
     public static void condoInheritance() {
         Condo myCondo = new Condo();
-        myCondo.setBalconyType("Small Balcony");
-        myCondo.doorFunction(); // from house
+//        myCondo.setBalconyType("Small Balcony");
+        myCondo.doorFunction(); // from house now overridden
         myCondo.maintenance(); // from condo
         System.out.println(myCondo.getBalconyType());
         System.out.println(myCondo.getDoorColor());
@@ -72,6 +72,8 @@ public class Main {
         House house3 = new House("Dirt", "Bamboo", "Tan", 30);
         System.out.println(house3.getFoundationType());
         System.out.println(house3.getRoofStyle());
+        house3.doorFunction();
+        house3.doorFunction("My door opens and its color is");
     }
 
     public static void conditionalLab() {

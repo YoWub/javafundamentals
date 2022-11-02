@@ -62,4 +62,8 @@ public class Boat {
     public void boomFunction() {
         System.out.println("This boom swings from starboard to port .");
     }
+
+    public void boomFunction(String message) {
+        System.out.println(message + " " + sternWidth);
+    }
 }

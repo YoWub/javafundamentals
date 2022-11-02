@@ -58,4 +58,7 @@ public class House {
     public void doorFunction() {
         System.out.println("This door opens.");
     }
+    public void doorFunction(String message) {
+        System.out.println(message + " " + doorColor);
+    }
 } // end class
