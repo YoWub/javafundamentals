@@ -24,8 +24,8 @@ public class PracticeMain {
 //        sailBoat();
 //        encapsulateGuitar();
 //        canoe();
-//        polyShapes();
-        carStuff();
+        polyShapes();
+//        carStuff();
     } // end method
 
     public static void encapsulateGuitar(){
@@ -84,7 +84,7 @@ public class PracticeMain {
     }
 
     public static void polyShapes() {
-        Pentagon pent1 = new Pentagon();
+        Pentagon pent1 = new Pentagon(10,10,10,10,10);
         double angle = pent1.InteriorAngleCalc();
         System.out.println(angle);
 
@@ -92,7 +92,8 @@ public class PracticeMain {
         double angle2 = hex1.InteriorAngleCalc();
         System.out.println(angle2);
 
-        Polygon poly1 = new Pentagon();
+        // Upcasting
+        Polygon poly1 = new Pentagon(20,20,20,20,20);
         double angle3 = poly1.InteriorAngleCalc();
         System.out.println(angle3);
     }

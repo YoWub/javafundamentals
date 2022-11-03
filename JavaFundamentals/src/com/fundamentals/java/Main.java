@@ -36,8 +36,31 @@ public class Main {
 //        loopingLab();
 //        condoInheritance();
 //        iceCreamFlavors();
-        collectionsLabAssignment();
+//        collectionsLabAssignment();
+        Lesson15Example();
     } // end method
+
+    public static void Lesson15Example () {
+        int[] numbers = {0,1,2,3,4,5,6,7,8,9};
+        HousePhone phone = new HousePhone(5,1,numbers,"LCD");
+        phone.receiveCall();
+        phone.sendCall();
+        System.out.println(phone.getScreen() + HousePhone.HASH);
+        phone.endCall();
+        phone.callerID("Spam", 5551234);
+
+        // Using the Abstract Class with Up-Casting
+        AbstractTelephone myTele = new HousePhone(7, 2, numbers, "No Screen");
+        myTele.sendCall();
+        System.out.println(myTele);
+        myTele.prankCall(new HousePhone(8, 1, numbers, "Haha!"));
+        myTele.prankCall(phone);
+
+        // Using the interface with Up-Casting
+        PhoneInterface myPhone2 = new HousePhone(4, 0, numbers, "What screen");
+        myPhone2.endCall();
+        System.out.println(PhoneInterface.HASH);
+    }
 
     public static void collectionsLabAssignment() {
         CollectionsLab myCollectionsLab = new CollectionsLab();
