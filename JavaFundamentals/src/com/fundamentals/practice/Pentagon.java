@@ -22,13 +22,14 @@ public class Pentagon extends Polygon{
     }
 
     @Override
-    double area() {
-        double value = 5 * (5 + 2*Math.sqrt(5))*Math.pow(numberOfSides, 2);
-        return 0.25 * Math.sqrt(value);
+    protected double area() {
+        System.out.println(super.area());
+        double value = 5 * (5 + 2*Math.sqrt(5));
+        return 0.25 * Math.sqrt(value)*Math.pow(sideA, 2);
     }
 
     @Override
-    double perimeter() {
+    protected double getPerimeter() {
         return sideA + sideB + sideC + sideD + sideE;
     }
 }

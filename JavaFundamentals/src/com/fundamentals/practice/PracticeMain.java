@@ -24,9 +24,30 @@ public class PracticeMain {
 //        sailBoat();
 //        encapsulateGuitar();
 //        canoe();
-        polyShapes();
+//        polyShapes();
+        polyMath();
 //        carStuff();
     } // end method
+
+    public static void polyMath() {
+        Pentagon pentagon = new Pentagon(15, 15, 15, 15, 15);
+        System.out.println(pentagon.getPerimeter());
+        System.out.println(pentagon.area());
+
+        Hexagon hexagon = new Hexagon(15);
+        System.out.println(hexagon.getPerimeter());
+        System.out.println(hexagon.area());
+
+        Parallelogram para = new Parallelogram(15, 30);
+        System.out.println(para.area());
+        System.out.println(para.getHeight());
+
+        Equilateral eq = new Equilateral(15);
+        System.out.println(eq.getPerimeter());
+        System.out.println(eq.numberOfSides);
+        System.out.println(eq.area());
+        System.out.println(eq.getHeight());
+    }
 
     public static void encapsulateGuitar(){
         Guitar guitar1 = new Guitar();
@@ -88,7 +109,7 @@ public class PracticeMain {
         double angle = pent1.InteriorAngleCalc();
         System.out.println(angle);
 
-        Hexagon hex1 = new Hexagon();
+        Hexagon hex1 = new Hexagon(15);
         double angle2 = hex1.InteriorAngleCalc();
         System.out.println(angle2);
 
