@@ -6,6 +6,7 @@ package com.fundamentals.java;
 import com.fundamentals.labs.*;
 import com.fundamentals.practice.ModifierPractice;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 // main class
@@ -37,10 +38,19 @@ public class Main {
 //        condoInheritance();
 //        iceCreamFlavors();
 //        collectionsLabAssignment();
-        Lesson15Example();
+//        lesson15Example();
+        televisionLab();
     } // end method
 
-    public static void Lesson15Example () {
+    public static void televisionLab() {
+        Television tv = new Television(20, BigDecimal.valueOf(199.99), 3, true);
+        System.out.println(tv.getNumPorts());
+        System.out.println(tv.getScreenSize());
+        System.out.println(tv.getPrice());
+        System.out.println(tv.isMountable());
+        tv.turnOn();
+    }
+    public static void lesson15Example () {
         int[] numbers = {0,1,2,3,4,5,6,7,8,9};
         HousePhone phone = new HousePhone(5,1,numbers,"LCD");
         phone.receiveCall();
