@@ -42,11 +42,17 @@ public class PracticeMain {
         System.out.println(para.area());
         System.out.println(para.getHeight());
 
-        Equilateral eq = new Equilateral(15);
-        System.out.println(eq.getPerimeter());
-        System.out.println(eq.numberOfSides);
-        System.out.println(eq.area());
-        System.out.println(eq.getHeight());
+//        Equilateral eq = new Equilateral(15);
+//        System.out.println(eq.getPerimeter());
+//        System.out.println(eq.numberOfSides);
+//        System.out.println(eq.area());
+//        System.out.println(eq.getHeight());
+
+        Isosceles iso = new Isosceles(20, 30);
+        System.out.println(iso.getPerimeter());
+        System.out.println(iso.numberOfSides);
+        System.out.println(iso.area());
+        System.out.println(iso.getHeight());
     }
 
     public static void encapsulateGuitar(){

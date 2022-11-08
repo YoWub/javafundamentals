@@ -10,6 +10,12 @@ public class Isosceles extends Triangle{
 
     @Override
     public double getHeight() {
-        return 0;
+        return Math.sqrt(Math.pow(sideB, 2) - Math.pow((sideC / 2), 2) );
+    }
+
+    @Override
+    protected double area() {
+        System.out.println(super.area());
+        return 0.5 * sideC * getHeight();
     }
 }
