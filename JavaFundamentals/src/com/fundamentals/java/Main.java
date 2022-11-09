@@ -41,8 +41,21 @@ public class Main {
 //        collectionsLabAssignment();
 //        lesson15Example();
 //        televisionLab();
-        lesson16Example();
+//        lesson16Example();
+        lesson17Example();
     } // end method
+
+    public static void lesson17Example() {
+        Lesson17 seventeen = new Lesson17();
+//        seventeen.noLamda();
+//        seventeen.withLambda();
+//        seventeen.multipleLambda();
+//        seventeen.listLambda();
+//        seventeen.filterLambda();
+//        seventeen.company1000();
+//        seventeen.company2000();
+        seventeen.queryInfo(Lesson17.getInfo(), (id -> id.getId() >= 2000));
+    }
 
     public static void lesson16Example() {
         //Access enum from class
@@ -162,9 +175,9 @@ public class Main {
         System.out.println(Lesson11.kelvinToFahrenheit(355.648));
     }
     public static void companyExample() {
-        CompanyInfo info = new CompanyInfo();
-        info.id = 101001;
-        info.name = "peter Parker";
+        CompanyInfo info = new CompanyInfo(10101, "Peter Parker");
+//        info.id = 101001;
+//        info.name = "peter Parker";
         info.display();
         CompanyInfo.company = "Daily Bugle";
         info.display();

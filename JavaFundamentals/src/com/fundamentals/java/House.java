@@ -61,4 +61,11 @@ public class House {
     public void doorFunction(String message) {
         System.out.println(message + " " + doorColor);
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " Foundation: " + getFoundationType() +
+                " Roof Style: " + getRoofStyle() + " Door Color: " + getDoorColor() +
+                " Window Size: " + getWindowSize();
+    }
 } // end class
