@@ -57,6 +57,14 @@ public class Car {
         this.exteriorColor = exteriorColor;
     }
 
+    public static int verifyNumber( int min, int max, int value) throws Exception {
+        if(value >= min && value <= max) {
+            return value;
+        } else {
+            throw new Exception("The value is not within our specs");
+        }
+    }
+
     @Override
     public String toString() {
         return getClass().getSimpleName();

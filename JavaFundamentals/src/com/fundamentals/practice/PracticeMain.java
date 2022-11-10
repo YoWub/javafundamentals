@@ -11,7 +11,7 @@ import java.lang.reflect.Array;
 
 public class PracticeMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
 //        modifiers();
 //        lessonsReference();
 //        exampleVarArgs();
@@ -82,7 +82,7 @@ public class PracticeMain {
         System.out.println(myAcousticGuitar.getNeckMaterial());
     }
 
-    public static void carStuff() {
+    public static void carStuff() throws Exception {
         SportsCar theCar = new SportsCar();
         System.out.println(theCar.getHeadLightType());
         System.out.println(theCar.getExteriorColor());
@@ -96,7 +96,10 @@ public class PracticeMain {
 //        theCar.setHorsePower(300);
 //        theCar.setWheelSize(17);
 
-        MuscleCar myCar = new MuscleCar(3, 19, 445, "Green", "Round");
+        int numDoor = MuscleCar.verifyNumber(2, 3, 3);
+        int sizeWheel = MuscleCar.verifyNumber(17, 24, 19);
+        int power = MuscleCar.verifyNumber(275, 550, 445);
+        MuscleCar myCar = new MuscleCar(numDoor, sizeWheel, power, "Green", "Round");
         System.out.println(myCar.getExteriorColor());
         System.out.println(myCar.getHorsePower());
 //        myCar.carShape(); // parent

@@ -42,9 +42,17 @@ public class Main {
 //        lesson15Example();
 //        televisionLab();
 //        lesson16Example();
-        lesson17Example();
+//        lesson17Example();
+        lesson18Example();
     } // end method
 
+    public static void lesson18Example() {
+        Lesson18 my18 = new Lesson18();
+//        my18.exampleThrows();
+//        my18.sampleThrow(2, 0);
+//        my18.exampleException();
+        my18.myArrayException();
+    }
     public static void lesson17Example() {
         Lesson17 seventeen = new Lesson17();
 //        seventeen.noLamda();
